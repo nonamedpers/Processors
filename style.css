@@ -1,0 +1,378 @@
+body {
+    margin: 0;
+    color: white;
+    background-color: black;
+    align-items: flex-end;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', sans-serif;
+}
+
+#themes {
+    background-color: #0f1012;
+    border-radius: 1vw;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: block;
+    transition: top 0.5s;
+    z-index: 1;
+}
+
+#themes a {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', sans-serif;
+    float: left;
+    display: block;
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.menu_panel {
+    list-style: none;
+    padding: 1vw;
+    margin: 0;
+}
+
+.menu_panel li{
+    display: inline-block;
+    padding: 0 25px;
+}
+
+main {
+ margin-top: 3vw;
+}
+
+#intro {
+    margin: 0;
+    width: 80%;
+    position: relative;
+    left: 10%;
+    padding-top: 5vw;
+}
+
+.img_intro {
+    margin: 0;
+    position: relative;
+    float: right;
+    width: 30%;
+}
+
+.main_letters {
+    position: relative;
+    text-align: left;
+    font-size: 5vw;
+    font-weight: 900;
+}
+
+.sub_main_letters {
+    position: relative;
+    text-align: left;
+    margin-top: 4vw;
+    font-size: 3vw;
+}
+
+.sub_text_int {
+    position: relative;
+    text-align: left;
+    margin-top: 2vw;
+    font-size: 2vw;
+    color: #808080;
+}
+
+.buttonh {
+    margin: 0;
+    border: none;
+    padding: 2vw;
+    text-align: center;
+    margin-top: 1vw;
+    font-size: 2vw;
+    border-radius: 1vw;
+    color: white;
+    background-color: #7400ff;
+    box-shadow: 0 0 2vw #7400ff;
+}
+
+.gifarrow {
+    position: absolute;
+    margin-top: 2vw;
+    margin-left: 3vw;
+    height: 5vw;
+    vertical-align: center;
+}
+
+.text {
+    margin-top: 4vw;
+    border-radius: 1vw;
+    width: 90%;
+    margin-left: 5%;
+    color: white;
+    background-color: #171717;
+}
+
+.history_text {
+    margin-top: 10vw;
+    border-radius: 1vw;
+    width: 90%;
+    margin-left: 5%;
+    color: white;
+    background-color: #171717;
+}
+
+.title_text_h {
+    position: relative;
+    padding-top: 2vw;
+    color: transparent;
+    background-clip: text;
+    background-image: linear-gradient(to right, #7400ff, #42AAFF);
+    text-align: center;
+    font-size: 3vw;
+}
+
+.main_txt {
+    font-size: 2vw;
+    width: 90%;
+    padding-left: 5%;
+}
+
+.proc_cons {
+    font-size: 2vw;
+    text-align: center;
+    color: transparent;
+    background-clip: text;
+    background-image: linear-gradient(to right, #7400ff, #42AAFF);
+}
+
+.cons_sheme {
+    width: 50%;
+    margin-left: 25%;
+}
+
+.descr_sheme {
+    font-size: 2vw;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.parts_proc {
+    font-size: 2vw;
+    width: 88%;
+    margin-left: 7%;
+}
+
+dt:after {
+    content: ": ";
+}
+
+dd {
+    color: #808080;
+    margin: 0;
+}
+
+.cycle {
+    font-size: 2vw;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.cycle_h {
+    font-size: 2vw;
+    text-align: center;
+    color: transparent;
+    background-clip: text;
+    background-image: linear-gradient(to right, #7400ff, #42AAFF);
+}
+
+.cycle_list {
+    font-size: 2vw;
+    width: 90%;
+    margin-left: 5%;
+    padding-bottom: 3vw;
+}
+
+footer {
+    margin-top: 5vw;
+    width: 100%;
+    background-color: #0f1012;
+    padding-top: 7vw;
+    padding-bottom: 7vw;
+}
+
+.copys {
+    width: 10%;
+    margin-left: 5vw;
+}
+
+.img_copy {
+    width: 80%;
+    margin-left: 10%;
+}
+
+.copy_text {
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.forteachers {
+    position: absolute;
+    font-size: 1.5vw;
+    margin-left: 35vw;
+}
+
+.teach {
+    text-decoration: none;
+    color: #808080
+}
+
+.forstud {
+    position: absolute;
+    font-size: 1.5vw;
+    margin-left: 55vw;
+}
+
+.stud {
+    text-decoration: none;
+    color: #808080
+}
+
+.vk {
+    position: absolute;
+    width: 3%;
+    margin-left: 80vw;
+}
+
+.tele {
+    position: absolute;
+    width: 3%;
+    margin-left: 85vw;
+}
+
+.int4004 {
+    font-size: 2vw;
+    width: 90%;
+    padding-left: 5%;
+}
+
+.img_4004 {
+    margin: 0;
+    position: relative;
+    float: right;
+    width: 30%;
+}
+
+.not_first {
+    font-size: 2vw;
+    text-align: center;
+    color: transparent;
+    background-clip: text;
+    background-image: linear-gradient(to right, #7400ff, #42AAFF);
+}
+
+.int8008 {
+    font-size: 2vw;
+    width: 90%;
+    padding-left: 5%;
+}
+
+.img_8008 {
+    margin: 0;
+    position: relative;
+    float: right;
+    width: 30%;
+    margin-right: 3%;
+}
+
+.ussr {
+    font-size: 2vw;
+    width: 90%;
+    padding-left: 5%;
+}
+
+.new {
+    font-size: 2vw;
+    width: 90%;
+    padding-left: 5%; 
+}
+
+.today {
+    font-size: 2vw;
+    width: 90%;
+    padding-left: 5%; 
+    padding-bottom: 3vw;
+}
+
+.real_text {
+    margin-top: 10vw;
+    border-radius: 1vw;
+    width: 90%;
+    margin-left: 5%;
+    color: white;
+    background-color: #171717;
+}
+
+.imgm {
+    margin: 0;
+    margin-right: 3vw;
+    position: relative;
+    float: right;
+    width: 5vw;
+}
+
+.nimgm {
+    margin: 0;
+    margin-right: 3vw;
+    position: relative;
+    float: right;
+    width: 35vw;
+}
+
+.trans_img {
+    margin: 0;
+    margin-right: 3vw;
+    position: relative;
+    float: right;
+    width: 20vw;
+}
+
+.n2imgm {
+    margin: 0;
+    margin-right: 3vw;
+    position: relative;
+    float: right;
+    width: 20vw;
+}
+
+.n3imgm {
+    margin: 0;
+    margin-right: 3vw;
+    margin-left: 2vw;
+    position: relative;
+    float: right;
+    width: 20vw;
+}
+
+table {
+    width: 90%;
+    margin-left: 5%;
+    font-size: 2vw;
+    line-height: 4vw;
+}
+
+td {
+    text-align: center;
+}
+
+.n4imgm {
+    margin: 0;
+    margin-right: 3vw;
+    margin-left: 2vw;
+    position: relative;
+    float: right;
+    width: 5vw;
+}
+
+.props {
+    margin: 0;
+    width: 90%;
+    margin-left: 4%;
+    padding-left: 1%;
+    font-size: 2vw;
+}

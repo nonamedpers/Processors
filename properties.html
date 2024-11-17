@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Процессор(CPU)</title>
+    <link rel="short icon" href="images/icon.png">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div id="themes">
+            <ul class="menu_panel">
+                <li><a href="index.html">Процессор</a></li>
+                <li><a href="real.html">Реализация логических операций</a></li>
+                <li><a href="properties.html">Основные характеристики процессора</a></li>
+                <li><a href="history.html">История</a></li>
+                <li><a href="producers.html">Производители</a></li>
+            </ul>
+        </div>
+    </nav>
+    <script>
+        let prevState = window.pageYOffset;
+        window.onscroll = function () {
+            let currentState = window.pageYOffset;
+            if (prevState > currentState) {
+                document.getElementById("themes").
+                    style.top = "0";
+            } else {
+                document.getElementById("themes").
+                    style.top = "-100px";
+            }
+            prevState = currentState;
+        }
+    </script>
+    <main>
+        <div id="intro">
+            <div>
+                <img class="img_intro" src="images/proc1.svg">
+                <h1 class="main_letters">Характеристики процессоров</h1>
+                <div>
+                    <p class="sub_main_letters">Кэш - это попугай такой?</p>
+                </div>
+                <div>
+                    <p class="sub_text_int">Разберёмся с непонятными терминами без лишних жертв</p>
+                </div>
+            </div>
+        </div>
+        <div class="real_text">
+            <h1 class="title_text_h">Чем определяется процессор?</h1>
+            <p class="main_txt">
+                Производительность процессора определяется двумя основными параметрами: тактовой частотой и разрядностью.
+                <ul class="props">
+                    <li>Тактовая частота — показатель того, сколько операций процессор может выполнить за одну секунду. Сегодня чаще всего измеряется в гигагерцах (ГГц). Например, если тактовая частота составляет 3 ГГц, то он сможет выполнять до 3 миллиардов операций в секунду. Чем выше частота, тем быстрее процессор выполняет задачи. Если перегрузить CPU, то это может вызвать троттлинг — принудительное снижение тактовой частоты, которое нужно, чтобы не перегреть оборудование.</li>
+                    <br>
+                    <li>Разрядность — показатель рабочего объёма данных. Например, если у процессора 32-битная разрядность, то он может обработать 32 бита данных за один такт. В современных компьютерах чаще используются 64-битные CPU. Они более быстрые и лучше обрабатывают большие объёмы данных.</li>
+                </ul>
+            </p>
+            <p class="main_txt">
+                Нельзя забывать и о других характеристиках:
+                <ul class="props">
+                    <li>Кэш-память — это быстрая память, в которой процессор хранит часто используемые данные и инструкции. Она бывает разных уровней: L1, L2 и L3. Чем больше кэш-память, тем быстрее ЦП получает доступ к данным.</li>
+                    <br>
+                    <li>
+                        Архитектура процессора определяет его внутреннюю структуру и набор команд. Современные CPU используют архитектуру:
+                        <ul class="props">
+                            <br>
+                            <li>Архитектура процессора определяет его внутреннюю структуру и набор команд. Современные CPU используют архитектуру:</li>
+                            <br>
+                            <li>RISC (reduced instruction set computer — «компьютер с сокращённым набором команд») — архитектура с минимальным набором простых команд. Размер команд подбирается так, чтобы их можно было выполнять за один такт. Обычно RISC-архитектуру используют в устройствах с низким энергопотреблением.</li>
+                            <br>
+                            <li>VLIW (very long instruction word — «очень длинная машинная команда») — архитектура, в которой за один такт выполняется несколько операций, объединённых в длинную команду.</li>
+                            <br>
+                            <li>MISC (minimal instruction set computer — «компьютер с минимальным набором команд») — архитектура с минимально возможным набором простых команд. Такие CPU часто используют в IoT-устройствах.</li>
+                        </ul>
+                        <br>
+                        Все эти архитектуры относятся к неймановскому типу — программа и данные хранятся в оперативной памяти, и ЦП загружает их поочерёдно. Существует также гарвардская архитектура, у которой программный код и данные хранятся в разных типах памяти.
+                    </li>
+                    <br>
+                    <li>Энергопотребление — количество электроэнергии, которое процессор использует для своей работы. Оно измеряется в ваттах (Вт). Энергопотребление может увеличиваться под нагрузками.</li>
+                    <br>
+                    <li>Тепловыделение — это количество тепла, которое выделяется при работе процессора. Оно зависит от энергопотребления и других характеристик ЦП. Важно учитывать тепловыделение при выборе системы охлаждения и корпуса компьютера.</li>
+                </ul>
+                <br>
+            </p>
+        </div>
+    </main>
+    <footer>
+        <div class="forteachers">
+            Учителям
+            <br>
+            <br>
+            <a href="https://sgo.edu-74.ru/authorize/login" class="teach">Сетевой город</a>
+        </div>
+        <div class="forstud">
+            Ученикам
+            <br>
+            <br>
+            <a href="https://htmlacademy.ru/study" class="stud">HTML Academy</a>
+            <br>
+            <br>
+            <a href="https://ru.hexlet.io" class="stud">Hexlet</a>
+            <br>
+            <br>
+            <a href="https://netology.ru" class="stud">Netology</a>
+        </div>
+        <a href="https://vk.com/hejdannchik"><img src="images/vk.svg" class="vk"></a>
+        <a href="https://t.me/balbesoid"><img src="images/telegramm.svg" class="tele"></a>
+        <div class="copys">
+            <img src="images/copy.svg" class="img_copy">
+            <div class="copy_text">© SpiridonovEP 2024</div>
+        </div>
+    </footer>
+</body>
+</html>

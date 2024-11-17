@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Процессор(CPU)</title>
+    <link rel="short icon" href="images/icon.png">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div id="themes">
+            <ul class="menu_panel">
+                <li><a href="index.html">Процессор</a></li>
+                <li><a href="real.html">Реализация логических операций</a></li>
+                <li><a href="properties.html">Основные характеристики процессора</a></li>
+                <li><a href="history.html">История</a></li>
+                <li><a href="producers.html">Производители</a></li>
+            </ul>
+        </div>
+    </nav>
+    <script>
+        let prevState = window.pageYOffset;
+        window.onscroll = function () {
+            let currentState = window.pageYOffset;
+            if (prevState > currentState) {
+                document.getElementById("themes").
+                    style.top = "0";
+            } else {
+                document.getElementById("themes").
+                    style.top = "-100px";
+            }
+            prevState = currentState;
+        }
+    </script>
+    <main>
+        <div id="intro">
+            <div>
+                <img class="img_intro" src="images/proc1.svg">
+                <h1 class="main_letters">Битва титанов</h1>
+                <div>
+                    <p class="sub_main_letters">Какие процессоры сегодня самые мощные?</p>
+                </div>
+                <div>
+                    <p class="sub_text_int">Извечный вопрос: AMD или Intel?</p>
+                </div>
+            </div>
+        </div>
+        <div class="real_text">
+            <h1 class="title_text_h">На чьей стороне ты?</h1>
+            <p class="main_txt">
+                Как уже было сказано, сегодня обстановка на рынке процессоров складывается так, что активно конкурируют друг с другом всего две компании: Intel и AMD.
+                Во многом это можно объяснить популярностью набора инструкций x86, на котором работали системы IBM и который развивали вышеупомянутые компании. 
+            </p>
+            <h2 class="not_first">В синем углу</h2>
+            <img src="images/intel.png" class="n2imgm">
+            <p class="main_txt">
+                Intel Corporation была основана в 1968 году Робертом Нойсом и Гордоном Муром. Компания стала известной благодаря своим инновациям в области полупроводников и микропроцессоров. В течение десятилетий Intel продолжала внедрять новые технологии и улучшать производительность своих процессоров, что сделало её лидером на рынке.
+                <br>
+                <br>
+                Сегодня Intel производит процессоры для настольных ПК, процессоры для серверов, процессоры для мобильных устройств. Также Intel активно развивает технологии в области искусственного интеллекта. 
+            </p>
+            <h2 class="not_first">В красном углу</h2>
+            <img src="images/amd.png" class="n3imgm">
+            <p class="main_txt">
+                Advanced Micro Devices (AMD) была основана в 1969 году Джерри Сандерсом и другими бывшими сотрудниками Fairchild Semiconductor. AMD долгое время была основным конкурентом Intel на рынке процессоров для ПК. В 2000-х годах компания представила свои первые 64-битные процессоры, что стало значительным достижением в индустрии. В последние годы AMD значительно укрепила свои позиции благодаря успешной линейке процессоров Ryzen.
+                <br>
+                <br>
+                AMD производит процессоры для настольных ПК, процессоры для серверов, графические процессоры. AMD известны своими разработками в сфере игр(AMD FreeSyns, Radeon Software), которые обеспечивают производительность и реалистичную графику.
+            </p>
+            <h2 class="not_first">Серый кардинал полупроводников</h2>
+            <p class="main_txt">
+                Taiwan Semiconductor Manufacturing Company (TCMS) — тайваньская компания, которая производит полупроводниковые изделия. Является мировым лидером контрактного производства полупроводников. Именно она стоит за производством чипов для ведущих мировых компаний.
+                <br>
+                <br>
+                TCMS обслуживает множество компаний по всему миру. Nvidia, Broadcom, Qualcomm, Intel и даже Apple используют передовые технологии от тайваньского производителя.
+            </p>
+            <h2 class="not_first">Мощнейшие из мощнейших</h2>
+            <p class="main_txt">
+                Вот и обозначили мы важнейшие компании индустрии процессоров на сегодня. Пора и перейти к их изделиям.
+            </p>
+            <table>
+                <tr>
+                    <td>Место в топе</td>
+                    <td>Оригинальное название</td>
+                    <td>Ядра</td>
+                    <td>Потоки</td>
+                    <td>Частота</td>
+                </tr>
+                <tr>
+                    <td>1.</td>
+                    <td>Intel Core Ultra 9 285K</td>
+                    <td>24</td>
+                    <td>24</td>
+                    <td>3.7 ГГц</td>
+                </tr>
+                <tr>
+                    <td>2.</td>
+                    <td>Intel Core Ultra 7 265K</td>
+                    <td>20</td>
+                    <td>20</td>
+                    <td>3.9 ГГц</td>
+                </tr>
+                <tr>
+                    <td>3.</td>
+                    <td>AMD Ryzen 9 9950X</td>
+                    <td>16</td>
+                    <td>32</td>
+                    <td>4.3 ГГц</td>
+                </tr>
+                <tr>
+                    <td>4.</td>
+                    <td>Intel Core i9-14900KS</td>
+                    <td>24</td>
+                    <td>32</td>
+                    <td>3.2 ГГц</td>
+                </tr>
+                <tr>
+                    <td>5.</td>
+                    <td>Intel Core i9-14900K</td>
+                    <td>24</td>
+                    <td>32</td>
+                    <td>3.2 ГГц</td>
+                </tr>
+            </table>
+            <p class="main_txt">
+                Топ составлен для пользовательских процессоров(не серверные). Данные взяты с сайта: <a href="https://benchmarkdb.ru/cpu/" style="color:#7400ff; text-decoration:none">https://benchmarkdb.ru/cpu/</a>
+            </p>
+            <br>
+        </div>
+    </main>
+    <footer>
+        <div class="forteachers">
+            Учителям
+            <br>
+            <br>
+            <a href="https://sgo.edu-74.ru/authorize/login" class="teach">Сетевой город</a>
+        </div>
+        <div class="forstud">
+            Ученикам
+            <br>
+            <br>
+            <a href="https://htmlacademy.ru/study" class="stud">HTML Academy</a>
+            <br>
+            <br>
+            <a href="https://ru.hexlet.io" class="stud">Hexlet</a>
+            <br>
+            <br>
+            <a href="https://netology.ru" class="stud">Netology</a>
+        </div>
+        <a href="https://vk.com/hejdannchik"><img src="images/vk.svg" class="vk"></a>
+        <a href="https://t.me/balbesoid"><img src="images/telegramm.svg" class="tele"></a>
+        <div class="copys">
+            <img src="images/copy.svg" class="img_copy">
+            <div class="copy_text">© SpiridonovEP 2024</div>
+        </div>
+    </footer>
+</body>
+</html>

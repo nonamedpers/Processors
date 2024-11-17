@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Процессор(CPU)</title>
+    <link rel="short icon" href="images/icon.png">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div id="themes">
+            <ul class="menu_panel">
+                <li><a href="index.html">Процессор</a></li>
+                <li><a href="real.html">Реализация логических операций</a></li>
+                <li><a href="properties.html">Основные характеристики процессора</a></li>
+                <li><a href="history.html">История</a></li>
+                <li><a href="producers.html">Производители</a></li>
+            </ul>
+        </div>
+    </nav>
+    <script>
+        let prevState = window.pageYOffset;
+        window.onscroll = function () {
+            let currentState = window.pageYOffset;
+            if (prevState > currentState) {
+                document.getElementById("themes").
+                    style.top = "0";
+            } else {
+                document.getElementById("themes").
+                    style.top = "-100px";
+            }
+            prevState = currentState;
+        }
+    </script>
+    <main>
+        <div id="intro">
+            <div>
+                <img class="img_intro" src="images/proc1.svg">
+                <h1 class="main_letters">Процессор</h1>
+            </div>
+            <div>
+                <p class="sub_main_letters">"Мозг" компьютера и любого другого электронного устройства, будь то смартфон или умная колонка.</p>
+            </div>
+            <div>
+                <p class="sub_text_int">За что же отвечает процессор? Какие функции он выполняет?</p>
+            </div>
+            <div class="howitworks"><button class="buttonh"><a href="#how" style="color:white; text-decoration:none">Как это работает</a></button><img class="gifarrow" src="images/gifs2.gif"> </div>
+        </div>
+        <div class="text">
+            <a name="how"></a>
+            <h1 class="title_text_h">Как это работает?</h1>
+            <p class="main_txt">
+                Процессор - это устройство, предназначенное для автоматического считывания команд программы, их расшифровки и выполнения.
+                <br><br>По-английски процессор называется CPU (расшифровка - Central Processor Unit, "центральное обрабатывающее устройство").
+            </p>
+            <h2 class="proc_cons">
+                Устройство процессора
+            </h2>
+            <img class="cons_sheme" src="images/consist.svg">
+            <p class="descr_sheme">
+                Процессор разделён на несколько составляющих, каждая из которых выполняет свои задачи.
+                <div class="parts_proc">
+                    <dl class="ls_parts">
+                        <dt>УУ - Устройство управления</dt>
+                        <dd>Блок процессора, который его работой для выполнения команды программы</dd>
+                        <br>
+                        <dt>АЛУ - Арифметическо-логическое устройство </dt>
+                        <dd>Блок процессора, который по командам УУ(устройство управления) выполняет арифметические и логические преобразования данных</dd>
+                        <br>
+                        <dt>P(ск) - Счётчик команд</dt>
+                        <dd>Регистр процессора, указывающий УУ(устройство управления), какую команду выполнять следующей</dd>
+                        <br>
+                        <dt>P(а) и P(б) - Регистры операндов</dt>
+                        <dd>Регистры процессора, отвечающие за хранение операндов арифметическо-логических инструкций</dd>
+                        <br>
+                        <dt>P(рез) - Регистр результата</dt>
+                        <dd>Регистр процессора, в котором хранятся результаты обработки данных АЛУ(арифметическо-логическое устройство)</dd>
+                        <br>
+                        <dt>P(он) - Регистры общего назначения</dt>
+                        <dd>Регистры процессора, доступные любым программам. Они используются для хранения указателей и операндов для вычисления адреса и указателей на память</dd>
+                    </dl>
+                </div>
+            </p>
+            <p class="cycle">
+                Теперь, когда мы познакомились с основными состовляющими процессора, можно раcсмотреть цикл его работы.
+                <h3 class="cycle_h">Цикл работы процессора</h3>
+                <div class="cycle_list">
+                    <ol>
+                        <li>Из ячейки памяти, адрес которой хранится в регистре счётчика команд, считывается команда</li>
+                        <br>
+                        <li>Значение в регистре счётчика команд увеличивается на длину команды</li>
+                        <br>
+                        <li>Команда считывается в УУ(устройство управления)</li>
+                        <br>
+                        <li>УУ(устройство управления) извлекает операнды и помещает их в регистры операндов</li>
+                        <br>
+                        <li>АЛУ(арифметическо-логическое устройство) выполняет операцию с результатами</li>
+                        <br>
+                        <li>Результат помещается в регистр результатов или регистры общего назначения</li>
+                        <br>
+                        <li>Результат отправляется в оперативную память по адресу, указанному в команде</li>
+                    </ol>
+                    После завершения последнего пункта процессор возвращается к первому пункту.
+                </div>
+            </p>
+        </div>
+    </main>
+    <footer>
+        <div class="forteachers">
+            Учителям
+            <br>
+            <br>
+            <a href="https://sgo.edu-74.ru/authorize/login" class="teach">Сетевой город</a>
+        </div>
+        <div class="forstud">
+            Ученикам
+            <br>
+            <br>
+            <a href="https://htmlacademy.ru/study" class="stud">HTML Academy</a>
+            <br>
+            <br>
+            <a href="https://ru.hexlet.io" class="stud">Hexlet</a>
+            <br>
+            <br>
+            <a href="https://netology.ru" class="stud">Netology</a>
+        </div>
+        <a href="https://vk.com/hejdannchik"><img src="images/vk.svg" class="vk"></a>
+        <a href="https://t.me/balbesoid"><img src="images/telegramm.svg" class="tele"></a>
+        <div class="copys">
+            <img src="images/copy.svg" class="img_copy">
+            <div class="copy_text">© SpiridonovEP 2024</div>
+        </div>
+    </footer>
+</body>
+</html>
